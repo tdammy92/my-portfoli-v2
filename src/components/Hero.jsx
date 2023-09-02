@@ -6,7 +6,10 @@ import StackIcon from "../common/StackIcon";
 
 function Hero() {
   return (
-    <section className="m ax-w-5xl h-screen mx-auto flex flex-col justify-center justify-items-center items-center">
+    <section
+      name="home"
+      className="m ax-w-5xl h-screen mx-auto flex flex-col justify-center justify-items-center items-center"
+    >
       <div className="px-6 py-6 flex justify-between items-center ">
         {/* <div className="w-1/2 h-full">
           <img

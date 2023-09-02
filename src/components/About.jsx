@@ -8,6 +8,7 @@ function About() {
 
   return (
     <section
+      name="about"
       className="max-w-5xl px-6 py-4 mx-auto mt-6 min-h-screen"
       id="about_page"
     >

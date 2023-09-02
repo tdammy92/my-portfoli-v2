@@ -13,10 +13,10 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaTelegram } from "react-icons/fa";
 
 function Contact() {
-  const className = `text-4xl text-black`;
+  const className = `text-2xl text-black`;
   const classNameSocial = `text-4xl text-white  hover:scale-125 duration-300`;
   return (
-    <section id="contact" className="max-w-5xl mx-auto p-4 pb-6">
+    <section id="contact" name="contact" className="max-w-5xl mx-auto p-4 pb-6">
       <div className="">
         <div className="text-center my-4 font-Poppins">
           <div className="text-gray-400 text-base flex items-center justify-center">

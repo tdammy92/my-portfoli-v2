@@ -125,3 +125,85 @@ export const TeckStack = [
     name: TechStack.FIREBASE,
   },
 ];
+
+export const ProjectType = {
+  WEB: "web",
+  MOBILE: "mobile",
+  DESKTOP: "desktop",
+};
+export const Project_data = [
+  {
+    type: ProjectType.MOBILE,
+    name: "SimpuGO",
+    projectImage:
+      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    description:
+      "Simpu is the all-in-one communication platform for your teams' and customer interaction needs from email, social media, SMS to Live chat.",
+    repo: "",
+    link: "https://ihdm.org/",
+    technologies: ["React-Native", "React-Query", "UI-kitten", "Firebase"],
+  },
+  {
+    type: ProjectType.MOBILE,
+    name: "DailyTask",
+    projectImage:
+      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    description:
+      "Daily Task is a close replica of google task, with more features such as nested List.",
+    repo: "",
+    link: "https://ihdm.org/",
+    technologies: ["React-Native", "Firebase"],
+  },
+  {
+    type: ProjectType.WEB,
+    name: "IHDM Portal",
+    projectImage:
+      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    description: "Registration portal",
+    repo: "https://github.com/tdammy92/ihdm-web",
+    link: "https://ihdm.org/",
+    technologies: ["ReactJS", "MaterialUI", "Node/StrapiJs", "MongoDb"],
+  },
+  {
+    type: ProjectType.WEB,
+    name: "IGPCM Portal",
+    projectImage:
+      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    description: "Registration portal",
+    repo: "https://github.com/tdammy92/ipcm-web",
+    link: "https://igpcm.org.ng/",
+    technologies: ["ReactJS", "MaterialUI", "NodeJs", "MongoDb", "Cloudinary"],
+  },
+  {
+    type: ProjectType.MOBILE,
+    name: "FugaGpa",
+    projectImage:
+      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    description:
+      "FugaGpa is a mobile app for student of the federal university gashua, which serves as a guild to many things on campus like GPA calculation, Time table, Library etc.",
+    repo: "https://github.com/tdammy92/FugaApp",
+    link: "https://drive.google.com/file/d/1h0soxyODfMDt9tnlkgIMTTcaCzTaRS8I/view?usp=sharing",
+    technologies: ["React-Native"],
+  },
+  {
+    type: ProjectType.WEB,
+    name: "Simplify Blog",
+    projectImage:
+      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    description: "Registration portal",
+    repo: "",
+    link: "https://simplifyblog.netlify.app/",
+    technologies: ["GatsbyJS", "CSS", "Node/StrapiJs", "MongoDb", "Cloudinary"],
+  },
+  {
+    type: ProjectType.DESKTOP,
+    name: "Tic Tac Toa (XandO)",
+    projectImage:
+      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    description:
+      "XandO popularly known as Tic Tac Toe Electron-react App for Desktop PC/Mac and linux",
+    repo: "https://github.com/tdammy92/XandO",
+    link: "https://simplifyblog.netlify.app/",
+    technologies: ["ElectronJS", "CSS"],
+  },
+];
