@@ -13,8 +13,8 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaTelegram } from "react-icons/fa";
 
 function Contact() {
-  const className = `text-2xl text-black`;
-  const classNameSocial = `text-4xl text-white  hover:scale-125 duration-300`;
+  const className = `text-xl  md:text-2xl text-black`;
+  const classNameSocial = `text-2xl md:text-4xl text-white  hover:scale-125 duration-300`;
   return (
     <section id="contact" name="contact" className="max-w-5xl mx-auto p-4 pb-6">
       <div className="">
@@ -25,8 +25,36 @@ function Contact() {
           </div>
           <h3 className="text-4xl">Contact Me</h3>
         </div>
-        <div className="grid grid-cols-2 font-Poppins mt-6">
-          <div className=" p-3 border border-black rounded-l-lg">
+        <div className="w-full">
+          <h5 className="text-center text-gray-500  font-Poppins">
+            Submit the form below or reachout through my social's
+          </h5>
+          <form className="my-2 max-w-[500px] mx-auto">
+            <input
+              className="block flex-1 border border-1 rounded-lg border-black bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 sm:text-sm sm:leading-6 md:text-xl  focus:outline-none  w-full my-4  font-Poppins"
+              type="text"
+              placeholder="Your Name"
+            />
+            <input
+              className="block flex-1 border border-1 rounded-lg border-black bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 sm:text-sm sm:leading-6 md:text-xl  focus:outline-none w-full my-4 font-Poppins"
+              type="email"
+              placeholder="Your Email"
+            />
+            <textarea
+              className="block flex-1 border border-1 rounded-lg border-black bg-transparent py-1.5 pl-3 text-gray-900 placeholder:text-gray-500 focus:ring-0 sm:text-sm sm:leading-6 md:text-xl  focus:outline-none w-full my-4 font-Poppins"
+              placeholder="Message Here..."
+            ></textarea>
+
+            <button
+              className=" border border-1 border-black px-3 py-2 rounded-lg hover:bg-black hover:text-white font-Poppins"
+              type="submit"
+            >
+              Lets Colaborate
+            </button>
+          </form>
+        </div>
+        <div className="grid  md:grid-cols-2 font-Poppins mt-6">
+          <div className="text-l md:text-2xl p-3 border border-black rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
             <div className="flex  items-center gap-2 my-3">
               <BiLogoGmail className={className} />
               <p>tdammy92@gmail.com</p>
@@ -40,7 +68,7 @@ function Contact() {
               <p>Lagos, Nigeria</p>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-2 justify-center justify-items-center items-center bg-black p-3 rounded-r-lg">
+          <div className="grid grid-cols-3 gap-4 md:gap-2 justify-center justify-items-center items-center bg-black p-3 rounded-b-lg md:rounded-r-lg md:rounded-bl-none">
             <a
               href="https://tdammy.com.ng/www.linkedin.com/in/taiwo-damilola-56061a91"
               target="__blank"

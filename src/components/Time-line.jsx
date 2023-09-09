@@ -26,12 +26,16 @@ const Item = ({ item, type }) => {
 };
 
 const EmptySide = ({ index }) => {
+  const className = ``;
+  // const className = `animate-ping delay-[${100 * index}]`;
+
+  // console.log(className);
   return (
     <>
       <div className="relative  col-span-1 w-full h-full flex justify-center items-center">
         <div className="h-full w-1 bg-gray-800"></div>
         <div className="absolute w-6 h-6 rounded-full z-10 bg-gray-800 text-white text-center">
-          {index + 1}
+          <span className={className}>{index + 1}</span>
         </div>
       </div>
     </>

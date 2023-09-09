@@ -15,7 +15,7 @@ import { BsGithub } from "react-icons/bs";
 import { TechStack } from "./data";
 
 function StackIcon({ stack, color }) {
-  const className = `text-4xl text-black`;
+  const className = `text-3xl md:text-4xl text-black dark:text-white`;
 
   switch (stack) {
     case TechStack.HTML:
