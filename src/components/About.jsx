@@ -1,21 +1,25 @@
 import React, { useState } from "react";
 import { FaGraduationCap } from "react-icons/fa";
+import { BsDashLg } from "react-icons/bs";
 import { SlBadge } from "react-icons/sl";
 import Experience from "./Experience";
 import Education from "./Education";
 function About() {
-  const [isExperience, setIsExperience] = useState(false);
+  const [isExperience, setIsExperience] = useState(true);
 
   return (
     <section
       name="about"
-      className="max-w-5xl px-6 py-4 mx-auto mt-6 min-h-screen"
+      className="max-w-5xl px-6 py-4 mx-auto  mt-3 md:mt-6 min-h-screen"
       id="about_page"
     >
       <div className="font-Poppins text-center">
-        <p className="text-gray-400">Get to Know more</p>
-        <h2 className="text-3xl">About Me</h2>
-        <p className="text-lg text-justify pt-4 text-gray-600">
+        <p className="text-sm  md:text-base lg:text-lg flex text-center items-center  justify-center text-gray-400  dark:text-gray-200">
+          <BsDashLg className="text-gray-400 text-2xl dark:text-gray-300" /> Get
+          to Know more
+        </p>
+        <h2 className="page-title">About Me</h2>
+        <p className="text-sm xs:text-base md:text-lg lg:text-xl text-justify pt-4 text-gray-600  dark:text-gray-200">
           With over three years of dedicated experience in the field of software
           development, I have established myself as a proficient and skilled
           professional. my journey began with a degree in Computer Science,
@@ -32,7 +36,7 @@ function About() {
       </div>
       <div className="mt-6 flex flex-row mx-auto justify-center">
         <button
-          className="mx-5 border-2 border-gray-500 p-2 px-5 rounded-3xl flex flex-row  items-center text-lg"
+          className="mx-5 border-2 border-gray-500 p-2 px-5 rounded-3xl flex flex-row  items-center text-lg dark:text-white hover:scale-105 transition duration-300 delay-200"
           onClick={() => setIsExperience(true)}
         >
           Experience{" "}
@@ -42,7 +46,7 @@ function About() {
           </span>
         </button>
         <button
-          className="mx-5 border-2 border-gray-500 p-2 px-5 rounded-3xl flex flex-row items-center text-lg"
+          className="mx-5 border-2 border-gray-500 p-2 px-4 rounded-3xl flex flex-row items-center text-lg dark:text-white hover:scale-105 transition duration-300 delay-200"
           onClick={() => setIsExperience(false)}
         >
           Education{" "}

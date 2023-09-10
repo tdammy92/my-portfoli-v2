@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="scroll-smooth dark:bg-black">
+    <div className="scroll-smooth dark:bg-black max-w-screen">
       <Nav />
       <Hero />
       <About />
