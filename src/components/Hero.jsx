@@ -39,7 +39,7 @@ function Hero() {
                 <FaCloudDownloadAlt />
               </span>
             </button> */}
-            <button className="mx-4 border-2 text-base xs:text-lg md:text-xl lg:text-2xl  border-black dark:border-white p-1 px:3 xs:px-4 md:px-6 rounded-3xl flex flex-row items-center bg-black text-white  hover:bg-white hover:text-black transition ease-in-out duration-300">
+            <button className="mx-4 border-2 text-base xs:text-lg md:text-xl lg:text-2xl  border-black dark:border-white p-1 px-6 xs:px-6 md:px-6 rounded-3xl flex flex-row items-center bg-black text-white  hover:bg-white hover:text-black transition ease-in-out duration-300">
               Chat me
               <span className="px-2">
                 <FaWhatsapp />

@@ -8,15 +8,17 @@ function Project({ project, index }) {
     <div className="mx-5 sm:mx-10 md:mx-0 grid grid-cols-1 md:grid-cols-2 gap-x-12 my-12 md:my-20 items-center">
       <div className="mb-4 md:mb-0">
         <img
-          className="rounded-lg"
+          className="rounded-lg  h-30 w-30 bg-slate-300"
           src={project?.projectImage}
           alt={project?.name}
           srcSet=""
         />
       </div>
       <div>
-        <h4 className="text-2xl  dark:text-white">{project?.name}</h4>
-        <p className="text-base text-gray-600 dark:text-gray-300">
+        <h4 className="text-base xs:text-xl md:text-xl lg:text-2xl font-semibold dark:text-white">
+          {project?.name}
+        </h4>
+        <p className="text-base xs:text-base md:text-xl lg:text-xl text-gray-600 dark:text-gray-300">
           {project?.description}
         </p>
         <div className="flex gap-2 my-3 flex-wrap">
@@ -31,25 +33,25 @@ function Project({ project, index }) {
         </div>
         <div className="font-Poppins text-xl flex gap-x-8 my-2 mt-5">
           <a
-            href={project?.repo}
+            href={project?.link}
             target="_blank"
-            rel="no"
+            rel="noreferrer"
             className="cursor-pointer"
           >
             {project?.type === ProjectType.WEB ? (
-              <span className="text-black dark:text-white  flex gap-1 items-center">
+              <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white  flex gap-x-2 items-center">
                 <BsBrowserChrome />
                 <p>View</p>
               </span>
             ) : (
-              <span className="text-black dark:text-white flex gap-1 items-center">
+              <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center">
                 <FaDownload />
                 <p>Download</p>
               </span>
             )}
           </a>
-          <a href={project?.repo} target="_blank" rel="no" className="">
-            <span className="text-black dark:text-white flex gap-1 items-center">
+          <a href={project?.repo} target="_blank" rel="noreferrer" className="">
+            <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center">
               <BsGithub />
               <p>Code</p>
             </span>

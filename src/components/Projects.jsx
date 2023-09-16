@@ -7,7 +7,7 @@ function Projects() {
     <section
       name="project"
       id="project"
-      className="max-w-5xl my-48 px-6 py-4 mx-auto min-h-screen font-Poppins"
+      className="max-w-5xl my-24 md:my-48 px-6 py-4 mx-auto min-h-screen font-Poppins"
     >
       <div>
         <p></p>

@@ -1,3 +1,8 @@
+import IHDM_Image from "assets/images/Ihdm_image.png";
+import IGPCM_Image from "assets/images/igpcm_image.png";
+import SimplifyBlog_Image from "assets/images/simplifyBlog_image.png";
+import SimpuGo_Image from "assets/images/SimpuGo_image.png";
+
 export const experience_data = [
   {
     title: "Lead Mobile Engineer",
@@ -135,19 +140,19 @@ export const Project_data = [
   {
     type: ProjectType.MOBILE,
     name: "SimpuGO",
-    projectImage:
-      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    projectImage: SimpuGo_Image,
+
     description:
       "Simpu is the all-in-one communication platform for your teams' and customer interaction needs from email, social media, SMS to Live chat.",
     repo: "",
-    link: "https://ihdm.org/",
+    link: "https://play.google.com/store/apps/details?id=co.simpu.inbox",
     technologies: ["React-Native", "React-Query", "UI-kitten", "Firebase"],
   },
   {
     type: ProjectType.MOBILE,
     name: "DailyTask",
     projectImage:
-      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+      "https://twproject.com/blog/wp-content/uploads/how-to-manage-project-integration.png",
     description:
       "Daily Task is a close replica of google task, with more features such as nested List.",
     repo: "",
@@ -157,8 +162,7 @@ export const Project_data = [
   {
     type: ProjectType.WEB,
     name: "IHDM Portal",
-    projectImage:
-      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    projectImage: IHDM_Image,
     description: "Registration portal",
     repo: "https://github.com/tdammy92/ihdm-web",
     link: "https://ihdm.org/",
@@ -167,8 +171,7 @@ export const Project_data = [
   {
     type: ProjectType.WEB,
     name: "IGPCM Portal",
-    projectImage:
-      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    projectImage: IGPCM_Image,
     description: "Registration portal",
     repo: "https://github.com/tdammy92/ipcm-web",
     link: "https://igpcm.org.ng/",
@@ -178,7 +181,7 @@ export const Project_data = [
     type: ProjectType.MOBILE,
     name: "FugaGpa",
     projectImage:
-      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+      "https://twproject.com/blog/wp-content/uploads/how-to-manage-project-integration.png",
     description:
       "FugaGpa is a mobile app for student of the federal university gashua, which serves as a guild to many things on campus like GPA calculation, Time table, Library etc.",
     repo: "https://github.com/tdammy92/FugaApp",
@@ -188,8 +191,7 @@ export const Project_data = [
   {
     type: ProjectType.WEB,
     name: "Simplify Blog",
-    projectImage:
-      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+    projectImage: SimplifyBlog_Image,
     description: "Registration portal",
     repo: "",
     link: "https://simplifyblog.netlify.app/",
@@ -199,7 +201,7 @@ export const Project_data = [
     type: ProjectType.DESKTOP,
     name: "Tic Tac Toa (XandO)",
     projectImage:
-      "https://uizard.io/static/0eb508d6e0f7367076f857fb37a28122/d9bdf/project-management-web-app-cover.png",
+      "https://twproject.com/blog/wp-content/uploads/how-to-manage-project-integration.png",
     description:
       "XandO popularly known as Tic Tac Toe Electron-react App for Desktop PC/Mac and linux",
     repo: "https://github.com/tdammy92/XandO",

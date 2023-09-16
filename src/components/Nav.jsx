@@ -26,12 +26,12 @@ function Nav() {
           smooth={true}
           offset={50}
           duration={500}
-          className="text-lg xs:text-xl md:text-2xl lg:text-3xl  dark:text-white font-semibold cursor-pointer"
+          className="text-lg xs:text-xl md:text-2xl lg:text-3xl  dark:text-white font-semibold cursor-pointer hover:scale-105 duration-200"
         >
           T-Dammy
         </Link>
         <div className="hidden md:block">
-          <ul className="flex flex-row gap-x-2 text-lg xs:text-xl md:text-xl lg:text-3xl  dark:text-white">
+          <ul className="flex flex-row gap-x-2 text-lg xs:text-xl md:text-xl lg:text-2xl  dark:text-white">
             <li className="mx-3  hover:border-b-2 hover:border-b-black  dark:hover:border-b-white">
               <Link to="about" smooth={true} offset={-70} duration={500}>
                 About
