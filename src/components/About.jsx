@@ -11,6 +11,7 @@ const SELECTED_OPTION = {
 };
 
 function About() {
+  const previous_theme = localStorage.getItem("theme");
   const [selected, setSelected] = useState(SELECTED_OPTION.EXPEERIENCE);
 
   return (
@@ -25,7 +26,7 @@ function About() {
           to Know more
         </p>
         <h2 className="page-title">About Me</h2>
-        <p className="text-sm xs:text-base md:text-lg lg:text-xl text-justify pt-4 text-gray-600  dark:text-gray-200">
+        <p className="text-sm xs:text-base md:text-lg lg:text-xl text-center pt-4 text-gray-600  dark:text-gray-200">
           With over three years of dedicated experience in the field of software
           development, I have established myself as a proficient and skilled
           professional. my journey began with a degree in Computer Science,

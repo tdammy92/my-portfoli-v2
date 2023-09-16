@@ -22,6 +22,7 @@ function Hero() {
         <div className="h-full text-center mx-auto mt-6">
           <div className="font-Poppins max-w-2xl">
             <p className="text-base xs:text-lg md:text-xl lg:text-2xl  font-bold  dark:text-white">
+              <span className="animate-bounce pr-1">✌️</span>
               Hello I'm
             </p>
             <h2 className="text-2xl xs:text-3xl md:text-4xl lg:text-6xl  font-black dark:text-white">

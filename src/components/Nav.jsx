@@ -1,22 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BsCloudMoonFill, BsBriefcaseFill } from "react-icons/bs";
 import { FaUserTie } from "react-icons/fa";
 import { LuSunMoon } from "react-icons/lu";
 import { RiContactsFill } from "react-icons/ri";
 import { Link } from "react-scroll";
+import useTheme, { themeType } from "hooks/useTheme";
 
 function Nav() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  function handleDarkMode() {
-    document.documentElement.classList.toggle("dark");
-  }
-
-  useEffect(() => {
-    const sub = handleDarkMode();
-
-    return () => sub;
-  }, [isDarkMode]);
+  const { theme, changeTheme } = useTheme();
 
   return (
     <nav className="py-3 px-5 z-20 font-Poppins fixed top-0 w-screen bg-white dark:bg-black">
@@ -60,10 +51,10 @@ function Nav() {
               </Link>
             </li>
             <li
-              onClick={() => setIsDarkMode(!isDarkMode)}
+              onClick={changeTheme}
               className="mx-3 ml-8   cursor-pointer text-2xl"
             >
-              {!isDarkMode ? <LuSunMoon /> : <BsCloudMoonFill />}
+              {theme === themeType.DARK ? <LuSunMoon /> : <BsCloudMoonFill />}
             </li>
           </ul>
         </div>
@@ -96,11 +87,8 @@ function Nav() {
                 <RiContactsFill />
               </Link>
             </li>
-            <li
-              onClick={() => setIsDarkMode(!isDarkMode)}
-              className="ml-4  cursor-pointer"
-            >
-              {!isDarkMode ? <LuSunMoon /> : <BsCloudMoonFill />}
+            <li onClick={changeTheme} className="ml-4  cursor-pointer">
+              {theme === themeType.DARK ? <LuSunMoon /> : <BsCloudMoonFill />}
             </li>
           </ul>
         </div>
