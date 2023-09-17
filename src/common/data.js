@@ -7,7 +7,7 @@ export const experience_data = [
   {
     title: "Lead Mobile Engineer",
     description:
-      "Development of Simpu mobile an android/iOS chat application with payment integration and user management.",
+      "My responsibilities at Simpu Inc, include supporting the entire application development lifecycle, producing functional mobile apps with clean code, conducting testing, troubleshooting and optimizing performance, designing user interfaces for better user experiences, researching and proposing new mobile technologies, staying updated on tech trends, fixing bugs, and making recommendations for improvements.",
     company: "Simpu Inc",
     location: "San Francisco, CA",
     from: "May,2022",
@@ -16,7 +16,7 @@ export const experience_data = [
   {
     title: "Front-End Developer/Customer Success Engineer",
     description:
-      "Development of Simpu mobile an android/iOS chat application with payment integration and user management.",
+      "Building and management of the Simplify Blog, overseeing codebase management and deployment, addressing customer-generated technical requests or issues through ticket resolution, troubleshooting both technical and process-related issues to ensure sustained productivity, and ensuring system functionality through rigorous testing.",
     company: "Mercator Technologies Ltd",
     location: "2nd Floor, The Garnet Building, Lekki Lagos",
     from: "October, 2019",
@@ -26,7 +26,7 @@ export const experience_data = [
   {
     title: "Network Administrator(Intern)",
     description:
-      "Development of Simpu mobile an android/iOS chat application with payment integration and user management.",
+      "As a system administrator at UPSL, my duties includes monitoring scheduled tasks, ensuring accurate computer output, performing data backups, updating firmware and security measures, managing Microsoft Active Directory, configuring and maintaining various security systems, and assisting with software upgrades and installations to ensure the smooth and secure operation of IT systems.",
     company: "Unified Payment Services Limited",
     location: "3, Idowu Taylor,Victoria Island Lagos",
     from: "October, 2019",

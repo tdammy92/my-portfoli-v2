@@ -52,7 +52,7 @@ function Nav() {
             </li>
             <li
               onClick={changeTheme}
-              className="mx-3 ml-8   cursor-pointer text-2xl"
+              className="mx-3 ml-8   cursor-pointer text-2xl hover:scale-110 duration-300"
             >
               {theme === themeType.DARK ? <LuSunMoon /> : <BsCloudMoonFill />}
             </li>

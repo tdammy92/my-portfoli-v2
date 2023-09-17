@@ -1,10 +1,12 @@
 import React from "react";
+import { FaUserGraduate } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
 
 const Item = ({ item, type }) => {
   return (
     <div className="col-span-4 w-full h-full">
       <div className="w-full h-full p-4 font-Poppins ">
-        <p className="text-base xs:text-lg md:text-xl lg:text-2xl text-gray-500 dark:text-gray-200">
+        <p className="text-base xs:text-lg md:text-xl lg:text-xl text-gray-500 dark:text-gray-200">
           {item?.company}
         </p>
         <p className="text-base xs:text-base md:text-lg lg:text-xl font-semibold py-1  dark:text-white">
@@ -29,17 +31,18 @@ const Item = ({ item, type }) => {
   );
 };
 
-const EmptySide = ({ index }) => {
+const EmptySide = ({ index, type }) => {
   const className = `dark:text-black`;
   // const className = `animate-ping delay-[${100 * index}]`;
 
-  // console.log(className);
   return (
     <>
       <div className="relative  col-span-1 w-full h-full hidden md:flex justify-center items-center">
         <div className="h-full w-1 bg-gray-800  dark:bg-white"></div>
-        <div className="absolute w-6 h-6 rounded-full z-10 bg-gray-800 text-white text-center dark:bg-white">
-          <span className={className}>{index + 1}</span>
+        <div className="absolute w-10 h-10 rounded-full z-10 bg-gray-800text-center bg-black dark:bg-white flex items-center justify-center">
+          <span className="text-white dark:text-black hover:scale-110 duration-300">
+            {type === "education" ? <FaUserGraduate /> : <MdWork />}
+          </span>
         </div>
       </div>
     </>
@@ -50,7 +53,7 @@ const RightSide = ({ item, index, type }) => {
   return (
     <>
       <div className="col-span-4 w-full h-full hidden md:block"></div>
-      <EmptySide index={index} />
+      <EmptySide index={index} type={type} />
       <Item item={item} type={type} />
     </>
   );
@@ -61,7 +64,7 @@ const LeftSide = ({ item, index, type }) => {
     <>
       {/* first stack */}
       <Item item={item} type={type} />
-      <EmptySide index={index} />
+      <EmptySide index={index} type={type} />
       <div className="col-span-4  hidden md:block w-full h-full"></div>
     </>
   );
