@@ -169,7 +169,7 @@ export const Project_data = [
       "Daily Task is a close replica of google task, with more features such as nested List.",
     repo: "",
     link: "https://drive.google.com/file/d/1JPX3IRVUXNLTu94DACJzR1CPyE9F6H3Y/view?usp=drive_link",
-    technologies: ["React-Native", "Firebase"],
+    technologies: ["React-Native", "Async-storage", "Firebase"],
   },
   {
     type: ProjectType.WEB,
