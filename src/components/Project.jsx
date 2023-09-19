@@ -32,44 +32,65 @@ function Project({ project, index }) {
           ))}
         </div>
         <div className="font-Poppins text-xl flex gap-x-8 my-2 mt-5">
-          <a
-            href={project?.link}
-            target="_blank"
-            rel="noreferrer"
-            className="cursor-pointer"
-          >
-            {project?.type === ProjectType.WEB ? (
-              <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white  flex gap-x-2 items-center">
-                <BsBrowserChrome />
-                <p>View</p>
-              </span>
-            ) : (
-              <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center">
-                <FaDownload />
-                <p>Download</p>
-              </span>
-            )}
-          </a>
-          <a
-            href={project?.repo}
-            target="_blank"
-            rel="noreferrer"
-            className={project?.repo === "" ? "cursor-not-allowed" : ""}
-            onclick={(event) => event.preventdefault()}
-            // aria-disabled={project?.repo === "" ? "true" : "false"}
-            // style={project?.repo === "" ? "pointer-events: none" : ""}
-          >
-            <span
-              className={
-                project?.repo !== ""
-                  ? "text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center"
-                  : "text-gray-400 text-base xs:text-base md:text-xl lg:text-xl dark:text-gray-500 flex gap-x-2 items-center"
-              }
+          {project?.link !== "" ? (
+            <a
+              href={project?.link}
+              target="_blank"
+              rel="noreferrer"
+              className="cursor-pointer"
             >
-              <BsGithub />
-              {project?.repo === "" ? <p>Private</p> : <p>Code</p>}
-            </span>
-          </a>
+              {project?.type === ProjectType.WEB ? (
+                <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white  flex gap-x-2 items-center">
+                  <BsBrowserChrome />
+                  <p>View</p>
+                </span>
+              ) : (
+                <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center">
+                  <FaDownload />
+                  <p>Download</p>
+                </span>
+              )}
+            </a>
+          ) : (
+            ""
+          )}
+
+          {project?.repo !== "" ? (
+            <a
+              href={project?.repo}
+              target="_blank"
+              rel="noreferrer"
+              className={project?.repo === "" ? "cursor-not-allowed" : ""}
+              onclick={(event) => event.preventdefault()}
+            >
+              <span
+                className={
+                  project?.repo !== ""
+                    ? "text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center"
+                    : "text-gray-400 text-base xs:text-base md:text-xl lg:text-xl dark:text-gray-500 flex gap-x-2 items-center"
+                }
+              >
+                <BsGithub />
+                {project?.repo === "" ? <p>Private</p> : <p>Code</p>}
+              </span>
+            </a>
+          ) : (
+            <button
+              className={"cursor-not-allowed"}
+              onclick={(event) => event.preventdefault()}
+            >
+              <span
+                className={
+                  project?.repo !== ""
+                    ? "text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center"
+                    : "text-gray-400 text-base xs:text-base md:text-xl lg:text-xl dark:text-gray-500 flex gap-x-2 items-center"
+                }
+              >
+                <BsGithub />
+                {project?.repo === "" ? <p>Private</p> : <p>Code</p>}
+              </span>
+            </button>
+          )}
         </div>
       </div>
     </div>

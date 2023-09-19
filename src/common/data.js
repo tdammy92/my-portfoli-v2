@@ -3,6 +3,7 @@ import IGPCM_Image from "assets/images/igpcm_image.png";
 import SimplifyBlog_Image from "assets/images/simplifyBlog_image.png";
 import SimpuGo_Image from "assets/images/SimpuGo_image.png";
 import Monie_Image from "assets/images/Monie_image.png";
+import DailyTask_Image from "assets/images/Dailytask_image.png";
 
 export const experience_data = [
   {
@@ -163,8 +164,7 @@ export const Project_data = [
   {
     type: ProjectType.MOBILE,
     name: "DailyTask",
-    projectImage:
-      "https://twproject.com/blog/wp-content/uploads/how-to-manage-project-integration.png",
+    projectImage: DailyTask_Image,
     description:
       "Daily Task is a close replica of google task, with more features such as nested List.",
     repo: "",
@@ -175,7 +175,8 @@ export const Project_data = [
     type: ProjectType.WEB,
     name: "IHDM Portal",
     projectImage: IHDM_Image,
-    description: "Registration portal",
+    description:
+      "Ihdm portal, is owned by a research body, that conducts independent result-based research on vulnerable communities, carries out public education and training, advance policy advocacy.",
     repo: "https://github.com/tdammy92/ihdm-web",
     link: "https://ihdm.org.ng/",
     technologies: ["ReactJS", "MaterialUI", "Node/StrapiJs", "MongoDb"],
@@ -184,7 +185,8 @@ export const Project_data = [
     type: ProjectType.WEB,
     name: "IGPCM Portal",
     projectImage: IGPCM_Image,
-    description: "Registration portal",
+    description:
+      "A Registration portal, IGPCM professionally raises, trains and primes individuals and corporate bodies, with practical skills training, in peace building.",
     repo: "https://github.com/tdammy92/ipcm-web",
     link: "https://igpcm.org.ng/",
     technologies: ["ReactJS", "MaterialUI", "NodeJs", "MongoDb", "Cloudinary"],
@@ -204,7 +206,8 @@ export const Project_data = [
     type: ProjectType.WEB,
     name: "Simplify Blog",
     projectImage: SimplifyBlog_Image,
-    description: "Registration portal",
+    description:
+      "The Blog is a journal to provide insight, about Simpilify, which is a simple and modern point of sales with integrated inventory management system for growing businesses.",
     repo: "",
     link: "https://simplifyblog.netlify.app/",
     technologies: ["GatsbyJS", "CSS", "Node/StrapiJs", "MongoDb", "Cloudinary"],
