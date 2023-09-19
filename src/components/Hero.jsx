@@ -40,12 +40,22 @@ function Hero() {
                 <FaCloudDownloadAlt />
               </span>
             </button> */}
-            <button className="mx-4 border-2 text-base xs:text-lg md:text-xl lg:text-2xl  border-black dark:border-white p-1 px-6 xs:px-6 md:px-6 rounded-3xl flex flex-row items-center bg-black text-white  hover:bg-white hover:text-black transition ease-in-out duration-300">
+
+            <a
+              href="https://api.whatsapp.com/send?phone=2347057216653"
+              target="__blank"
+              className="mx-4 border-2 text-base xs:text-lg md:text-xl lg:text-2xl gap-x-2 border-black dark:border-white p-1 px-6 xs:px-6 md:px-6 rounded-3xl flex flex-row items-center bg-black text-white  hover:bg-white hover:text-black transition ease-in-out duration-300"
+            >
+              <span> Chat me</span>
+              <FaWhatsapp />
+            </a>
+
+            {/* <button className="mx-4 border-2 text-base xs:text-lg md:text-xl lg:text-2xl  border-black dark:border-white p-1 px-6 xs:px-6 md:px-6 rounded-3xl flex flex-row items-center bg-black text-white  hover:bg-white hover:text-black transition ease-in-out duration-300">
               Chat me
               <span className="px-2">
                 <FaWhatsapp />
               </span>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

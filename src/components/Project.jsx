@@ -50,10 +50,24 @@ function Project({ project, index }) {
               </span>
             )}
           </a>
-          <a href={project?.repo} target="_blank" rel="noreferrer" className="">
-            <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center">
+          <a
+            href={project?.repo}
+            target="_blank"
+            rel="noreferrer"
+            className={project?.repo === "" ? "cursor-not-allowed" : ""}
+            onclick={(event) => event.preventdefault()}
+            // aria-disabled={project?.repo === "" ? "true" : "false"}
+            // style={project?.repo === "" ? "pointer-events: none" : ""}
+          >
+            <span
+              className={
+                project?.repo !== ""
+                  ? "text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center"
+                  : "text-gray-400 text-base xs:text-base md:text-xl lg:text-xl dark:text-gray-500 flex gap-x-2 items-center"
+              }
+            >
               <BsGithub />
-              <p>Code</p>
+              {project?.repo === "" ? <p>Private</p> : <p>Code</p>}
             </span>
           </a>
         </div>

@@ -2,6 +2,7 @@ import IHDM_Image from "assets/images/Ihdm_image.png";
 import IGPCM_Image from "assets/images/igpcm_image.png";
 import SimplifyBlog_Image from "assets/images/simplifyBlog_image.png";
 import SimpuGo_Image from "assets/images/SimpuGo_image.png";
+import Monie_Image from "assets/images/Monie_image.png";
 
 export const experience_data = [
   {
@@ -150,13 +151,24 @@ export const Project_data = [
   },
   {
     type: ProjectType.MOBILE,
+    name: "Moniee Mobile",
+    projectImage: Monie_Image,
+
+    description:
+      "Moniee is a mobile fintech app for sending and recieving funds directly to anyone from your contact. ",
+    repo: "https://github.com/tdammy92/Moniee",
+    link: "https://drive.google.com/file/d/1-LImj4UBOstDWKjDeEw1JBTvtLxthN30/view?usp=drive_link",
+    technologies: ["React-Native", "Async-storage", "redux"],
+  },
+  {
+    type: ProjectType.MOBILE,
     name: "DailyTask",
     projectImage:
       "https://twproject.com/blog/wp-content/uploads/how-to-manage-project-integration.png",
     description:
       "Daily Task is a close replica of google task, with more features such as nested List.",
     repo: "",
-    link: "https://ihdm.org/",
+    link: "https://drive.google.com/file/d/1JPX3IRVUXNLTu94DACJzR1CPyE9F6H3Y/view?usp=drive_link",
     technologies: ["React-Native", "Firebase"],
   },
   {
@@ -165,7 +177,7 @@ export const Project_data = [
     projectImage: IHDM_Image,
     description: "Registration portal",
     repo: "https://github.com/tdammy92/ihdm-web",
-    link: "https://ihdm.org/",
+    link: "https://ihdm.org.ng/",
     technologies: ["ReactJS", "MaterialUI", "Node/StrapiJs", "MongoDb"],
   },
   {
@@ -205,7 +217,7 @@ export const Project_data = [
     description:
       "XandO popularly known as Tic Tac Toe Electron-react App for Desktop PC/Mac and linux",
     repo: "https://github.com/tdammy92/XandO",
-    link: "https://simplifyblog.netlify.app/",
+    link: "",
     technologies: ["ElectronJS", "CSS"],
   },
 ];

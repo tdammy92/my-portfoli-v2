@@ -178,7 +178,7 @@ function Contact() {
                 <p>Lagos, Nigeria</p>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-4 md:gap-2 justify-center justify-items-center items-center bg-black p-3 rounded-b-lg md:rounded-r-lg md:rounded-bl-none dark:bg-gray-200">
+            <div className="grid grid-cols-3 gap-4 md:gap-2 justify-center justify-items-center items-center bg-black p-3 rounded-b-lg md:rounded-r-lg md:rounded-bl-none dark:bg-white">
               <a
                 href="https://tdammy.com.ng/www.linkedin.com/in/taiwo-damilola-56061a91"
                 target="__blank"
