@@ -16,9 +16,9 @@ export const experience_data = [
     to: "Present",
   },
   {
-    title: "Front-End Developer/Customer Success Engineer",
+    title: "Front-End Developer/Site Reliability Engineer",
     description:
-      "Building and management of the Simplify Blog, overseeing codebase management and deployment, addressing customer-generated technical requests or issues through ticket resolution, troubleshooting both technical and process-related issues to ensure sustained productivity, and ensuring system functionality through rigorous testing.",
+      "Building and management of the Simplify Blog, Mange and review pr’s, maintaining branches, setting up continuous integration and continuous delivery (CI/CD) pipelines, and reviewing code changes, troubleshooting both technical and process-related issues to ensure sustained productivity, and ensuring system functionality through rigorous testing.",
     company: "Mercator Technologies Ltd",
     location: "2nd Floor, The Garnet Building, Lekki Lagos",
     from: "October, 2019",
