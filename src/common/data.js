@@ -16,11 +16,20 @@ export const experience_data = [
     to: "Present",
   },
   {
+    title: "Full-Stack Developer",
+    description:
+      "Buit and currently Managing the IHDM and IGPCM portals, for data records and exam registration. ",
+    company: "IHDM (Institute of Humanitarian and Disaster Management)",
+    location: "Abuja, Nigeria",
+    from: "September, 2020",
+    to: "Present",
+  },
+  {
     title: "Front-End Developer/Site Reliability Engineer",
     description:
       "Building and management of the Simplify Blog, Mange and review pr’s, maintaining branches, setting up continuous integration and continuous delivery (CI/CD) pipelines, and reviewing code changes, troubleshooting both technical and process-related issues to ensure sustained productivity, and ensuring system functionality through rigorous testing.",
     company: "Mercator Technologies Ltd",
-    location: "2nd Floor, The Garnet Building, Lekki Lagos",
+    location: "Lekki Lagos",
     from: "October, 2019",
     to: "May, 2022",
   },
@@ -31,8 +40,8 @@ export const experience_data = [
       "As a system administrator at UPSL, my duties includes monitoring scheduled tasks, ensuring accurate computer output, performing data backups, updating firmware and security measures, managing Microsoft Active Directory, configuring and maintaining various security systems, and assisting with software upgrades and installations to ensure the smooth and secure operation of IT systems.",
     company: "Unified Payment Services Limited",
     location: "3, Idowu Taylor,Victoria Island Lagos",
-    from: "October, 2019",
-    to: "May, 2018",
+    from: "May, 2018",
+    to: "October, 2019",
   },
 ];
 
