@@ -1,7 +1,9 @@
 import IHDM_Image from "assets/images/Ihdm_image.png";
 import IGPCM_Image from "assets/images/igpcm_image.png";
 import SimplifyBlog_Image from "assets/images/simplifyBlog_image.png";
+import Goboomit_Image from "assets/images/Goboomit.png";
 import SimpuGo_Image from "assets/images/SimpuGo_image.png";
+import SimpuGo_Banner from "assets/images/simpuBanner.png";
 import Monie_Image from "assets/images/Monie_image.png";
 import DailyTask_Image from "assets/images/Dailytask_image.png";
 
@@ -151,13 +153,24 @@ export const Project_data = [
   {
     type: ProjectType.MOBILE,
     name: "SimpuGO",
-    projectImage: SimpuGo_Image,
+    projectImage: SimpuGo_Banner,
 
     description:
       "Simpu is the all-in-one communication platform for your teams' and customer interaction needs from email, social media, SMS to Live chat.",
     repo: "",
     link: "https://play.google.com/store/apps/details?id=co.simpu.inbox",
     technologies: ["React-Native", "React-Query", "UI-kitten", "Firebase"],
+  },
+  {
+    type: ProjectType.MOBILE,
+    name: "Goboomit",
+    projectImage: Goboomit_Image,
+
+    description:
+      "Goboomit is a platform that makes it easy for influencers and businesses to collaborate. Paving the way for good cooperation between our influencers and their partners. we also have a strong focus on companies and their campaigns, so on goboomit, you can find all kinds of products, companies and campaigns",
+    repo: "",
+    link: "https://play.google.com/store/apps/details?id=com.goboomit",
+    technologies: ["React-Native", "Expo", "Firebase"],
   },
   {
     type: ProjectType.MOBILE,
