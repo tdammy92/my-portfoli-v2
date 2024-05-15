@@ -19,8 +19,6 @@ import Modal from "./Modal";
 
 const url = process.env.REACT_APP_FORM_URL;
 
-
-
 const contactSchema = Yup.object().shape({
   name: Yup.string().required().label("Name"),
   email: Yup.string().required().email().label("Email"),
@@ -55,24 +53,25 @@ function Contact() {
       formData.append("email", email);
       formData.append("message", message);
 
-
       const response = await axios.post(
         url,
         {
-          body:formData
+          body: formData,
         },
-        { headers: { 'content-type': 'application/x-www-form-urlencoded' } }
+        {
+          mode: 'no-cors',
+          headers: {
+            "content-type": "application/x-www-form-urlencoded",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
       );
-
- 
-
 
       if (response.status === 200) {
         setShowModal(true);
       }
     } catch (error) {
-
-      console.log("error from submit form",error);
+      console.log("error from submit form", error);
     } finally {
       setisLoadding(false);
     }
