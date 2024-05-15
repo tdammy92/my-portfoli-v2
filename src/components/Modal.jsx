@@ -1,5 +1,5 @@
 import React from "react";
-import { PiSealCheckLight } from "react-icons/pi";
+// import { PiSealCheckLight } from "react-icons/pi";
 function Modal({ name, handleClose }) {
   return (
     <div className="fixed inset-0  bg-black bg-opacity-10  backdrop-blur-sm z-50 flex items-center">

@@ -1,6 +1,8 @@
 import React from "react";
-import { FaCloudDownloadAlt, FaWhatsapp } from "react-icons/fa";
-import DammyImage from "../assets/images/Dammy_official.jpeg";
+import { 
+  // FaCloudDownloadAlt, 
+  FaWhatsapp } from "react-icons/fa";
+// import DammyImage from "../assets/images/Dammy_official.jpeg";
 import { TeckStack } from "../common/data";
 import StackIcon from "../common/StackIcon";
 
@@ -29,7 +31,7 @@ function Hero() {
               Taiwo Damilola
             </h2>
             <p className="text-base xs:text-l md:text-xl lg:text-2xl   text-gray-600 my-5 dark:text-gray-200">
-              A software Engineer, Network Engineer || System Administrator
+              A Senior Mobile Engineer, Network Engineer || System Administrator
               conversant with the evolvment of technology
             </p>
           </div>

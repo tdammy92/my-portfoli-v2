@@ -61,7 +61,7 @@ function Project({ project, index }) {
               target="_blank"
               rel="noreferrer"
               className={project?.repo === "" ? "cursor-not-allowed" : ""}
-              onclick={(event) => event.preventdefault()}
+              onClick={(event) => event.preventdefault()}
             >
               <span
                 className={
@@ -77,7 +77,7 @@ function Project({ project, index }) {
           ) : (
             <button
               className={"cursor-not-allowed"}
-              onclick={(event) => event.preventdefault()}
+              onClick={(event) => event.preventdefault()}
             >
               <span
                 className={

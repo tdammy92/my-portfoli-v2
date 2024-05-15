@@ -32,7 +32,7 @@ const Item = ({ item, type }) => {
 };
 
 const EmptySide = ({ index, type }) => {
-  const className = `dark:text-black`;
+  // const className = `dark:text-black`;
   // const className = `animate-ping delay-[${100 * index}]`;
 
   return (

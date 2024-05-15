@@ -2,12 +2,21 @@ import IHDM_Image from "assets/images/Ihdm_image.png";
 import IGPCM_Image from "assets/images/igpcm_image.png";
 import SimplifyBlog_Image from "assets/images/simplifyBlog_image.png";
 import Goboomit_Image from "assets/images/Goboomit.png";
-import SimpuGo_Image from "assets/images/SimpuGo_image.png";
+// import SimpuGo_Image from "assets/images/SimpuGo_image.png";
 import SimpuGo_Banner from "assets/images/simpuBanner.png";
 import Monie_Image from "assets/images/Monie_image.png";
 import DailyTask_Image from "assets/images/Dailytask_image.png";
 
 export const experience_data = [
+  {
+    title: "Senior Mobile Engineer",
+    description:
+      "My responsibilities at Simpu Inc, include supporting the entire application development lifecycle, producing functional mobile apps with clean code, conducting testing, troubleshooting and optimizing performance, designing user interfaces for better user experiences, researching and proposing new mobile technologies, staying updated on tech trends, fixing bugs, and making recommendations for improvements.",
+    company: "Luupli",
+    location: "London, UK",
+    from: "Jan,2024",
+    to: "Present",
+  },
   {
     title: "Lead Mobile Engineer",
     description:
