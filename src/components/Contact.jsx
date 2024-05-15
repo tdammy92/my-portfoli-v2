@@ -61,8 +61,12 @@ function Contact() {
         {
           body:formData
         },
-        { headers: { "Content-Type": "application/json" } }
+        { headers: { 'content-type': 'application/x-www-form-urlencoded' } }
       );
+
+ 
+
+
       if (response.status === 200) {
         setShowModal(true);
       }
