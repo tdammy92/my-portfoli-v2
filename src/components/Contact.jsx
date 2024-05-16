@@ -12,7 +12,7 @@ import { GiSmartphone } from "react-icons/gi";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaTelegram } from "react-icons/fa";
-import axios from "axios";
+// import axios from "axios";
 import * as Yup from "yup";
 import { Formik, Form } from "formik";
 import Modal from "./Modal";
@@ -49,23 +49,12 @@ function Contact() {
       setisLoadding(true);
 
       const formData = new FormData();
-      formData.append("name", name);
-      formData.append("email", email);
-      formData.append("message", message);
+      formData.append("Name", name);
+      formData.append("Email", email);
+      formData.append("Message", message);
 
-      const response = await axios.post(
-        url,
-        {
-          body: formData,
-        },
-        {
-          mode: 'no-cors',
-          headers: {
-            "content-type": "application/x-www-form-urlencoded",
-            "Access-Control-Allow-Origin": "*",
-          },
-        }
-      );
+
+      const response =await fetch(url,{method:'POST',body:formData});
 
       if (response.status === 200) {
         setShowModal(true);
@@ -76,6 +65,8 @@ function Contact() {
       setisLoadding(false);
     }
   };
+
+
 
   return (
     <>
@@ -100,6 +91,7 @@ function Contact() {
               innerRef={FormikRef}
               initialValues={initialValue}
               validationSchema={contactSchema}
+              // onSubmit={Submit}
               onSubmit={handleFormSubmit}
             >
               {({

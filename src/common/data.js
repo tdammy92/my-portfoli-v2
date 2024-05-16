@@ -9,9 +9,9 @@ import DailyTask_Image from "assets/images/Dailytask_image.png";
 
 export const experience_data = [
   {
-    title: "Senior Mobile Engineer",
+    title: "Lead  Mobile Engineer",
     description:
-      "My responsibilities at Simpu Inc, include supporting the entire application development lifecycle, producing functional mobile apps with clean code, conducting testing, troubleshooting and optimizing performance, designing user interfaces for better user experiences, researching and proposing new mobile technologies, staying updated on tech trends, fixing bugs, and making recommendations for improvements.",
+      "My responsibilities as  the Lead Mobile enineer, include spearheading the development and maintenance of Luupli mobile application, managing a team of engineers while providing technical guidance and leadership. Establishing  technical architecture and design of applications, ensuring scalability, performance, and adherence to coding standards the entire application development lifecycle, producing functional mobile apps with clean code, conducting testing, troubleshooting and optimizing performance, designing user interfaces for better user experiences.",
     company: "Luupli",
     location: "London, UK",
     from: "Jan,2024",
@@ -20,7 +20,7 @@ export const experience_data = [
   {
     title: "Lead Mobile Engineer",
     description:
-      "My responsibilities at Simpu Inc, include supporting the entire application development lifecycle, producing functional mobile apps with clean code, conducting testing, troubleshooting and optimizing performance, designing user interfaces for better user experiences, researching and proposing new mobile technologies, staying updated on tech trends, fixing bugs, and making recommendations for improvements.",
+      "My task at Simpu Inc, include supporting the entire application development lifecycle, producing functional mobile apps with clean code, conducting testing, troubleshooting and optimizing performance, designing user interfaces for better user experiences, researching and proposing new mobile technologies, staying updated on tech trends, fixing bugs, and making recommendations for improvements.",
     company: "Simpu Inc",
     location: "San Francisco, CA",
     from: "May,2022",
