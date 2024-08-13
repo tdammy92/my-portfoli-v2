@@ -8,6 +8,7 @@ import {
   SiFirebase,
   SiElectron,
 } from "react-icons/si";
+import {RiNextjsFill}  from "react-icons/ri";
 import { FaCss3Alt, FaReact, FaAngular, FaNodeJs } from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -46,6 +47,8 @@ function StackIcon({ stack, color }) {
       return <SiElectron className={className} />;
     case TechStack.ANGULAR:
       return <FaAngular className={className} />;
+    case TechStack.NEXTJS:
+      return <RiNextjsFill className={className} />;
 
     default:
       <div />;

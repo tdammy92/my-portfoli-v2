@@ -2,8 +2,8 @@ import IHDM_Image from "assets/images/Ihdm_image.png";
 import IGPCM_Image from "assets/images/igpcm_image.png";
 import SimplifyBlog_Image from "assets/images/simplifyBlog_image.png";
 import Goboomit_Image from "assets/images/Goboomit.png";
-// import SimpuGo_Image from "assets/images/SimpuGo_image.png";
 import SimpuGo_Banner from "assets/images/simpuBanner.png";
+import Luupli_Banner from "assets/images/Luupli_banner.png";
 import Monie_Image from "assets/images/Monie_image.png";
 import DailyTask_Image from "assets/images/Dailytask_image.png";
 
@@ -98,6 +98,7 @@ export const TechStack = {
   NODEJS: "NodeJs",
   TYPESCRIPT: "typescript",
   REACTJS: "ReactJS",
+  NEXTJS: "NextJS",
   REACTNATIVE: "ReactNative",
   ELECTRON: "ElectronJS",
   ANGULAR: "AngularJS",
@@ -126,6 +127,9 @@ export const TeckStack = [
   },
   {
     name: TechStack.REACTJS,
+  },
+  {
+    name: TechStack.NEXTJS,
   },
   {
     name: TechStack.REACTNATIVE,
@@ -159,6 +163,16 @@ export const ProjectType = {
   DESKTOP: "desktop",
 };
 export const Project_data = [
+  {
+    type: ProjectType.MOBILE,
+    name: "Luupli",
+    projectImage: Luupli_Banner,
+    description:
+      "luupli, the revolutionary social media platform that empowers genuine self-expression and promotes authentic human connections. Join a diverse global community where your voice takes center stage.",
+    repo: "",
+    link: "https://apps.apple.com/gb/app/luupli/id6463861554",
+    technologies: ["React-Native", "React-Query", "Firebase","Websocket"],
+  },
   {
     type: ProjectType.MOBILE,
     name: "SimpuGO",
@@ -222,17 +236,17 @@ export const Project_data = [
     link: "https://igpcm.org.ng/",
     technologies: ["ReactJS", "MaterialUI", "NodeJs", "MongoDb", "Cloudinary"],
   },
-  {
-    type: ProjectType.MOBILE,
-    name: "FugaGpa",
-    projectImage:
-      "https://twproject.com/blog/wp-content/uploads/how-to-manage-project-integration.png",
-    description:
-      "FugaGpa is a mobile app for student of the federal university gashua, which serves as a guild to many things on campus like GPA calculation, Time table, Library etc.",
-    repo: "https://github.com/tdammy92/FugaApp",
-    link: "https://drive.google.com/file/d/1h0soxyODfMDt9tnlkgIMTTcaCzTaRS8I/view?usp=sharing",
-    technologies: ["React-Native"],
-  },
+  // {
+  //   type: ProjectType.MOBILE,
+  //   name: "FugaGpa",
+  //   projectImage:
+  //     "https://twproject.com/blog/wp-content/uploads/how-to-manage-project-integration.png",
+  //   description:
+  //     "FugaGpa is a mobile app for student of the federal university gashua, which serves as a guild to many things on campus like GPA calculation, Time table, Library etc.",
+  //   repo: "https://github.com/tdammy92/FugaApp",
+  //   link: "https://drive.google.com/file/d/1h0soxyODfMDt9tnlkgIMTTcaCzTaRS8I/view?usp=sharing",
+  //   technologies: ["React-Native"],
+  // },
   {
     type: ProjectType.WEB,
     name: "Simplify Blog",
@@ -243,15 +257,15 @@ export const Project_data = [
     link: "https://simplifyblog.netlify.app/",
     technologies: ["GatsbyJS", "CSS", "Node/StrapiJs", "MongoDb", "Cloudinary"],
   },
-  {
-    type: ProjectType.DESKTOP,
-    name: "Tic Tac Toa (XandO)",
-    projectImage:
-      "https://twproject.com/blog/wp-content/uploads/how-to-manage-project-integration.png",
-    description:
-      "XandO popularly known as Tic Tac Toe Electron-react App for Desktop PC/Mac and linux",
-    repo: "https://github.com/tdammy92/XandO",
-    link: "",
-    technologies: ["ElectronJS", "CSS"],
-  },
+  // {
+  //   type: ProjectType.DESKTOP,
+  //   name: "Tic Tac Toa (XandO)",
+  //   projectImage:
+  //     "https://twproject.com/blog/wp-content/uploads/how-to-manage-project-integration.png",
+  //   description:
+  //     "XandO popularly known as Tic Tac Toe Electron-react App for Desktop PC/Mac and linux",
+  //   repo: "https://github.com/tdammy92/XandO",
+  //   link: "",
+  //   technologies: ["ElectronJS", "CSS"],
+  // },
 ];
