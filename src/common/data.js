@@ -9,6 +9,15 @@ import DailyTask_Image from "assets/images/Dailytask_image.png";
 
 export const experience_data = [
   {
+    title: "Senior Mobile Engineer (Part time)",
+    description:
+      "As a senior engineer at Launch legends building the Autheo Mobile. I transform designs into high quality scalable mobile app, collaborating with cross-functional teams to deliver user-friendly features, optimize performance, resolve bugs, and ensure seamless API integration. maintaing clean code, create reusable components, manage app deployments, and stay updated on mobile development trends to drive continuous improvement and user engagement.",
+    company: "Launch Legend",
+    location: "Wyoming, United States",
+    from: "Nov,2024",
+    to: "Present",
+  },
+  {
     title: "Lead  Mobile Engineer",
     description:
       "My responsibilities as  the Lead Mobile enineer, include spearheading the development and maintenance of Luupli mobile application, managing a team of engineers while providing technical guidance and leadership. Establishing  technical architecture and design of applications, ensuring scalability, performance, and adherence to coding standards the entire application development lifecycle, producing functional mobile apps with clean code, conducting testing, troubleshooting and optimizing performance, designing user interfaces for better user experiences.",
@@ -18,7 +27,7 @@ export const experience_data = [
     to: "Present",
   },
   {
-    title: "Lead Mobile Engineer",
+    title: "Mobile Engineer",
     description:
       "My task at Simpu Inc, include supporting the entire application development lifecycle, producing functional mobile apps with clean code, conducting testing, troubleshooting and optimizing performance, designing user interfaces for better user experiences, researching and proposing new mobile technologies, staying updated on tech trends, fixing bugs, and making recommendations for improvements.",
     company: "Simpu Inc",
@@ -33,7 +42,7 @@ export const experience_data = [
     company: "IHDM (Institute of Humanitarian and Disaster Management)",
     location: "Abuja, Nigeria",
     from: "September, 2020",
-    to: "Present",
+    to: "Feb, 2024",
   },
   {
     title: "Front-End Developer/Site Reliability Engineer",
@@ -46,13 +55,13 @@ export const experience_data = [
   },
 
   {
-    title: "Network Administrator(Intern)",
+    title: "Network Administrator",
     description:
       "As a system administrator at UPSL, my duties includes monitoring scheduled tasks, ensuring accurate computer output, performing data backups, updating firmware and security measures, managing Microsoft Active Directory, configuring and maintaining various security systems, and assisting with software upgrades and installations to ensure the smooth and secure operation of IT systems.",
     company: "Unified Payment Services Limited",
     location: "3, Idowu Taylor,Victoria Island Lagos",
     from: "May, 2018",
-    to: "October, 2019",
+    to: "October, 2018",
   },
 ];
 
@@ -107,6 +116,7 @@ export const TechStack = {
   MONGODB: "Mongo DB",
   JEST: "Jest (Testing)",
   FIREBASE: "Firebase",
+  DOCKER: "Docker",
 };
 
 export const TeckStack = [
@@ -154,6 +164,9 @@ export const TeckStack = [
   },
   {
     name: TechStack.FIREBASE,
+  },
+  {
+    name: TechStack.DOCKER,
   },
 ];
 

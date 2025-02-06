@@ -5,6 +5,7 @@ import {
 // import DammyImage from "../assets/images/Dammy_official.jpeg";
 import { TeckStack } from "../common/data";
 import StackIcon from "../common/StackIcon";
+import Tooltip from "./ToolTip";
 
 function Hero() {
   return (
@@ -73,7 +74,10 @@ function Hero() {
                 key={index}
                 title={stack?.name}
               >
+
+                <Tooltip text={stack?.name}>
                 <StackIcon className="" stack={stack.name} />
+                </Tooltip>
               </div>
             );
           })}

@@ -9,7 +9,7 @@ import {
   SiElectron,
 } from "react-icons/si";
 import {RiNextjsFill}  from "react-icons/ri";
-import { FaCss3Alt, FaReact, FaAngular, FaNodeJs } from "react-icons/fa";
+import { FaCss3Alt, FaReact, FaAngular, FaNodeJs,FaDocker } from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
 import { TbBrandReactNative } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
@@ -49,6 +49,8 @@ function StackIcon({ stack, color }) {
       return <FaAngular className={className} />;
     case TechStack.NEXTJS:
       return <RiNextjsFill className={className} />;
+    case TechStack.DOCKER:
+      return <FaDocker className={className} />;
 
     default:
       <div />;
