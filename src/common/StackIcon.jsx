@@ -7,12 +7,21 @@ import {
   SiJest,
   SiFirebase,
   SiElectron,
+  SiExpress,
+  SiNestjs,
 } from "react-icons/si";
-import {RiNextjsFill}  from "react-icons/ri";
-import { FaCss3Alt, FaReact, FaAngular, FaNodeJs,FaDocker } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import {
+  FaCss3Alt,
+  FaReact,
+  FaAngular,
+  FaNodeJs,
+  FaDocker,
+} from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
 import { TbBrandReactNative } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { TechStack } from "./data";
 
 function StackIcon({ stack, color }) {
@@ -51,7 +60,12 @@ function StackIcon({ stack, color }) {
       return <RiNextjsFill className={className} />;
     case TechStack.DOCKER:
       return <FaDocker className={className} />;
-
+    case TechStack.EXPRESSJS:
+      return <SiExpress className={className} />;
+    case TechStack.NESTJS:
+      return <SiNestjs className={className} />;
+    case TechStack.POSTGRES:
+      return <BiLogoPostgresql className={className} />;
     default:
       <div />;
       break;

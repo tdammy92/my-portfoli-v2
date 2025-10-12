@@ -26,16 +26,16 @@ function About() {
         </p>
         <h2 className="page-title">About Me</h2>
         <p className="text-sm xs:text-base md:text-lg lg:text-xl  xm:leading-6  md:leading-10 text-center pt-4 text-gray-600  dark:text-gray-200">
-          Passionate mobile and front-end engineer dedicated to crafting
-          seamless digital experiences that captivate users and drive
-          innovation. With a keen eye for design and a knack for translating
-          creative visions into code, I'm on a mission to bring the future to
-          your fingertips. Whether it's optimizing user interfaces for a
-          pixel-perfect display or diving into the world of responsive web
-          design, I thrive on the challenges of the ever-evolving tech
-          landscape. Join me on this exciting journey of code, creativity, and
-          constant learning, as we shape the digital world together. #MobileDev
-          📱✨ #FrontEndWizard 🖥️
+          I’m a passionate mobile and front-end engineer, dedicated to turning
+          ideas into elegant, maintainable code. With a deep appreciation for
+          design and usability, I aim to deliver digital experiences that feel
+          intuitive and efficient. Over the years, I’ve worked across mobile,
+          web, and system-level stack layers bridging UI, server logic, and
+          infrastructure. I’m always exploring new tools, refining performance,
+          and raising the bar on user experience. When I’m not coding, I love
+          learning about distributed systems, exploring UI/UX trends, and
+          contributing to open-source communities. <br /> #MobileDev 📱✨
+          #FrontEndWizard 🖥️
         </p>
       </div>
       <div className="mt-10 flex flex-row mx-auto justify-center">

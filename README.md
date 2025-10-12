@@ -8,7 +8,7 @@ Email @ [tdammy92@gmail.com](mailto:tdammy.coom.ng).
 
 twitter [@tdamilola](https://twitter.com/TDamilola).
 
-LinkedIn [Taiwo Damilola](https://www.linkedin.com/in/taiwo-damilola-56061a91/).
+LinkedIn [Taiwo Damilola](https://www.linkedin.com/in/damilola-taiwo-56061a91/).
 
 ## run project Scripts
 

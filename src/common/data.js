@@ -1,30 +1,31 @@
 import IHDM_Image from "assets/images/Ihdm_image.png";
 import IGPCM_Image from "assets/images/igpcm_image.png";
-import SimplifyBlog_Image from "assets/images/simplifyBlog_image.png";
+// import SimplifyBlog_Image from "assets/images/simplifyBlog_image.png";
 import Goboomit_Image from "assets/images/Goboomit.png";
 import SimpuGo_Banner from "assets/images/simpuBanner.png";
 import Luupli_Banner from "assets/images/Luupli_banner.png";
 import Monie_Image from "assets/images/Monie_image.png";
 import DailyTask_Image from "assets/images/Dailytask_image.png";
+import Dhac_Image from "assets/images/Dhac_Banner.png";
 
 export const experience_data = [
   {
-    title: "Senior Mobile Engineer (Part time)",
-    description:
-      "As a senior engineer at Launch legends building the Autheo Mobile. I transform designs into high quality scalable mobile app, collaborating with cross-functional teams to deliver user-friendly features, optimize performance, resolve bugs, and ensure seamless API integration. maintaing clean code, create reusable components, manage app deployments, and stay updated on mobile development trends to drive continuous improvement and user engagement.",
-    company: "Launch Legend",
-    location: "Wyoming, United States",
-    from: "Nov,2024",
-    to: "Present",
-  },
-  {
     title: "Lead  Mobile Engineer",
     description:
-      "My responsibilities as  the Lead Mobile enineer, include spearheading the development and maintenance of Luupli mobile application, managing a team of engineers while providing technical guidance and leadership. Establishing  technical architecture and design of applications, ensuring scalability, performance, and adherence to coding standards the entire application development lifecycle, producing functional mobile apps with clean code, conducting testing, troubleshooting and optimizing performance, designing user interfaces for better user experiences.",
+      "As a leader in mobile development, I oversaw the entire application lifecycle, from initial architecture and development through to successful deployment. I managed a team of skilled engineers, guiding key technical decisions to ensure robust code quality, scalability, and strict adherence to industry best practices. My role was instrumental in driving performance optimization and the consistent delivery of new features across the platform.",
     company: "Luupli",
     location: "London, UK",
     from: "Jan,2024",
     to: "Present",
+  },
+  {
+    title: "Senior Mobile Engineer (Part time)",
+    description:
+      "As a senior engineer at Launch legends, I translated complex designs into high-performing, scalable React Native modules. By collaborating with product and backend teams, I was instrumental in defining features, optimizing APIs, and boosting performance. My commitment to clean architecture and reusable components laid a sustainable foundation for the application, while my oversight of deployments, versioning, and continuous improvements ensured a smooth and reliable release cycle.",
+    company: "Launch Legend",
+    location: "Wyoming, United States",
+    from: "Nov,2024",
+    to: "Jun, 2025",
   },
   {
     title: "Mobile Engineer",
@@ -33,7 +34,7 @@ export const experience_data = [
     company: "Simpu Inc",
     location: "San Francisco, CA",
     from: "May,2022",
-    to: "Present",
+    to: "Oct, 2025",
   },
   {
     title: "Full-Stack Developer",
@@ -42,7 +43,7 @@ export const experience_data = [
     company: "IHDM (Institute of Humanitarian and Disaster Management)",
     location: "Abuja, Nigeria",
     from: "September, 2020",
-    to: "Feb, 2024",
+    to: "Dec, 2024",
   },
   {
     title: "Front-End Developer/Site Reliability Engineer",
@@ -117,56 +118,94 @@ export const TechStack = {
   JEST: "Jest (Testing)",
   FIREBASE: "Firebase",
   DOCKER: "Docker",
+  EXPRESSJS: "ExpressJS",
+  NESTJS: "NestJS",
+  POSTGRES: "PostgreSQL",
+};
+
+export const StackType = {
+  FRONTEND: "frontend",
+  BACKEND: "backend",
+  DATABASE: "database",
+  TOOL: "tool",
 };
 
 export const TeckStack = [
   {
     name: TechStack.HTML,
+    type: StackType.FRONTEND,
   },
   {
     name: TechStack.CSS,
+    type: StackType.FRONTEND,
   },
   {
     name: TechStack.TAILWIND,
+    type: StackType.FRONTEND,
   },
   {
     name: TechStack.JAVASCRIPT,
+    type: StackType.FRONTEND,
   },
   {
     name: TechStack.TYPESCRIPT,
+    type: StackType.FRONTEND,
   },
   {
     name: TechStack.REACTJS,
+    type: StackType.FRONTEND,
   },
   {
     name: TechStack.NEXTJS,
+    type: StackType.FRONTEND,
   },
   {
     name: TechStack.REACTNATIVE,
+    type: StackType.FRONTEND,
   },
   {
     name: TechStack.ELECTRON,
+    type: StackType.FRONTEND,
   },
   {
     name: TechStack.ANGULAR,
+    type: StackType.FRONTEND,
   },
   {
     name: TechStack.NODEJS,
+    type: StackType.BACKEND,
+  },
+  {
+    name: TechStack.EXPRESSJS,
+    type: StackType.BACKEND,
+  },
+  {
+    name: TechStack.NESTJS,
+    type: StackType.BACKEND,
   },
   {
     name: TechStack.GIT,
+    type: StackType.TOOL,
   },
   {
     name: TechStack.MONGODB,
+    type: StackType.DATABASE,
+  },
+  {
+    name: TechStack.POSTGRES,
+    type: StackType.DATABASE,
   },
   {
     name: TechStack.JEST,
+    type: StackType.TOOL,
   },
   {
     name: TechStack.FIREBASE,
+    type: StackType.DATABASE,
   },
   {
     name: TechStack.DOCKER,
+    type: StackType.TOOL,
   },
 ];
 
@@ -178,13 +217,34 @@ export const ProjectType = {
 export const Project_data = [
   {
     type: ProjectType.MOBILE,
+    name: "Dhac App",
+    projectImage: Dhac_Image,
+    description:
+      "Dhac, an app connecting truck owners with verified CDL drivers. Monetize idle vehicles or lease quality trucks with flexible terms and secure payments.",
+    repo: "",
+    link: "https://www.dhac.app/",
+    appStoreLink: "",
+    playStoreLink: "",
+    technologies: [
+      "React-Native",
+      "React-Query",
+      "Maps",
+      "Geo-location",
+      "Websocket",
+    ],
+  },
+  {
+    type: ProjectType.MOBILE,
     name: "Luupli",
     projectImage: Luupli_Banner,
     description:
       "luupli, the revolutionary social media platform that empowers genuine self-expression and promotes authentic human connections. Join a diverse global community where your voice takes center stage.",
     repo: "",
     link: "https://apps.apple.com/gb/app/luupli/id6463861554",
-    technologies: ["React-Native", "React-Query", "Firebase","Websocket"],
+    appStoreLink: "https://apps.apple.com/gb/app/luupli/id6463861554",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.dev.luupli.uat&hl=en",
+    technologies: ["React-Native", "React-Query", "Firebase", "Websocket"],
   },
   {
     type: ProjectType.MOBILE,
@@ -195,6 +255,9 @@ export const Project_data = [
       "Simpu is the all-in-one communication platform for your teams' and customer interaction needs from email, social media, SMS to Live chat.",
     repo: "",
     link: "https://play.google.com/store/apps/details?id=co.simpu.inbox",
+    appStoreLink: "https://apps.apple.com/us/app/simpugo/id1645026323",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=co.simpu.inbox",
     technologies: ["React-Native", "React-Query", "UI-kitten", "Firebase"],
   },
   {
@@ -206,6 +269,9 @@ export const Project_data = [
       "Goboomit is a platform that makes it easy for influencers and businesses to collaborate. Paving the way for good cooperation between our influencers and their partners. we also have a strong focus on companies and their campaigns, so on goboomit, you can find all kinds of products, companies and campaigns",
     repo: "",
     link: "https://play.google.com/store/apps/details?id=com.goboomit",
+    appStoreLink:
+      "https://apps.apple.com/us/app/goboomit/id6444501062?platform=iphone",
+    playStoreLink: "https://play.google.com/store/apps/details?id=com.goboomit",
     technologies: ["React-Native", "Expo", "Firebase"],
   },
   {
@@ -217,6 +283,8 @@ export const Project_data = [
       "Moniee is a mobile fintech app for sending and recieving funds directly to anyone from your contact. ",
     repo: "https://github.com/tdammy92/Moniee",
     link: "https://drive.google.com/file/d/1-LImj4UBOstDWKjDeEw1JBTvtLxthN30/view?usp=drive_link",
+    appStoreLink: "",
+    playStoreLink: "",
     technologies: ["React-Native", "Async-storage", "redux"],
   },
   {
@@ -227,6 +295,8 @@ export const Project_data = [
       "Daily Task is a close replica of google task, with more features such as nested List.",
     repo: "",
     link: "https://drive.google.com/file/d/1JPX3IRVUXNLTu94DACJzR1CPyE9F6H3Y/view?usp=drive_link",
+    appStoreLink: "",
+    playStoreLink: "",
     technologies: ["React-Native", "Async-storage", "Firebase"],
   },
   {
@@ -246,7 +316,7 @@ export const Project_data = [
     description:
       "A Registration portal, IGPCM professionally raises, trains and primes individuals and corporate bodies, with practical skills training, in peace building.",
     repo: "https://github.com/tdammy92/ipcm-web",
-    link: "https://igpcm.org.ng/",
+    link: "https://igpcm.com.ng/",
     technologies: ["ReactJS", "MaterialUI", "NodeJs", "MongoDb", "Cloudinary"],
   },
   // {
@@ -260,16 +330,16 @@ export const Project_data = [
   //   link: "https://drive.google.com/file/d/1h0soxyODfMDt9tnlkgIMTTcaCzTaRS8I/view?usp=sharing",
   //   technologies: ["React-Native"],
   // },
-  {
-    type: ProjectType.WEB,
-    name: "Simplify Blog",
-    projectImage: SimplifyBlog_Image,
-    description:
-      "The Blog is a journal to provide insight, about Simpilify, which is a simple and modern point of sales with integrated inventory management system for growing businesses.",
-    repo: "",
-    link: "https://simplifyblog.netlify.app/",
-    technologies: ["GatsbyJS", "CSS", "Node/StrapiJs", "MongoDb", "Cloudinary"],
-  },
+  // {
+  //   type: ProjectType.WEB,
+  //   name: "Simplify Blog",
+  //   projectImage: SimplifyBlog_Image,
+  //   description:
+  //     "The Blog is a journal to provide insight, about Simpilify, which is a simple and modern point of sales with integrated inventory management system for growing businesses.",
+  //   repo: "",
+  //   link: "https://simplifyblog.netlify.app/",
+  //   technologies: ["GatsbyJS", "CSS", "Node/StrapiJs", "MongoDb", "Cloudinary"],
+  // },
   // {
   //   type: ProjectType.DESKTOP,
   //   name: "Tic Tac Toa (XandO)",

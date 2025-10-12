@@ -53,8 +53,7 @@ function Contact() {
       formData.append("Email", email);
       formData.append("Message", message);
 
-
-      const response =await fetch(url,{method:'POST',body:formData});
+      const response = await fetch(url, { method: "POST", body: formData });
 
       if (response.status === 200) {
         setShowModal(true);
@@ -65,8 +64,6 @@ function Contact() {
       setisLoadding(false);
     }
   };
-
-
 
   return (
     <>
@@ -84,9 +81,13 @@ function Contact() {
             <h3 className="page-title">Contact Me</h3>
           </div>
           <div className="w-full mb-14">
-            <h5 className="text-center text-gray-500  font-Poppins dark:text-gray-300">
-              Submit the form below or reachout through my social's
-            </h5>
+            <p className="text-center text-gray-500  font-Poppins dark:text-gray-300">
+              I’m open to new opportunities and collaborations. Whether you're a
+              startup, enterprise, or non-profit, I’d love to bring your idea to
+              life. Feel free to submit a message via the contact form or reach
+              out on social platforms.
+            </p>
+
             <Formik
               innerRef={FormikRef}
               initialValues={initialValue}
@@ -184,7 +185,7 @@ function Contact() {
             </div>
             <div className="grid grid-cols-3 gap-4 md:gap-2 justify-center justify-items-center items-center bg-black p-3 rounded-b-lg md:rounded-r-lg md:rounded-bl-none dark:bg-white">
               <a
-                href="https://tdammy.com.ng/www.linkedin.com/in/taiwo-damilola-56061a91"
+                href="https://tdammy.com.ng/www.linkedin.com/in/damilola-taiwo-56061a91"
                 target="__blank"
               >
                 <BsLinkedin className={classNameSocial} />

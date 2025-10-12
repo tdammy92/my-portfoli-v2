@@ -2,6 +2,8 @@ import React from "react";
 import { ProjectType } from "../common/data";
 import { BsBrowserChrome, BsGithub } from "react-icons/bs";
 import { FaDownload } from "react-icons/fa";
+import { BiLogoPlayStore } from "react-icons/bi";
+import { IoIosAppstore } from "react-icons/io";
 
 function Project({ project, index }) {
   return (
@@ -32,28 +34,72 @@ function Project({ project, index }) {
           ))}
         </div>
         <div className="font-Poppins text-xl flex gap-x-8 my-2 mt-5">
-          {project?.link !== "" ? (
-            <a
-              href={project?.link}
-              target="_blank"
-              rel="noreferrer"
-              className="cursor-pointer"
-            >
+          {project?.link !== "" ||
+          project?.appStoreLink !== "" ||
+          project?.playStoreLink !== "" ? (
+            <>
               {project?.type === ProjectType.WEB ? (
-                <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white  flex gap-x-2 items-center">
-                  <BsBrowserChrome />
-                  <p>View</p>
-                </span>
+                <a
+                  href={project?.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white  flex gap-x-2 items-center">
+                    <BsBrowserChrome />
+                    <p>View</p>
+                  </span>
+                </a>
               ) : (
-                <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center">
-                  <FaDownload />
-                  <p>Download</p>
-                </span>
+                <>
+                  <div className="flex gap-x-4">
+                    {project?.appStoreLink !== "" && (
+                      <a
+                        href={project?.appStoreLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="cursor-pointer"
+                      >
+                        <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center">
+                          <IoIosAppstore className="h-6 w-6" />
+                          <p>AppStore</p>
+                        </span>
+                      </a>
+                    )}
+
+                    {project?.playStoreLink !== "" && (
+                      <a
+                        href={project?.playStoreLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="cursor-pointer"
+                      >
+                        <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center">
+                          <BiLogoPlayStore className="h-6 w-6" />
+                          <p>PlayStore</p>
+                        </span>
+                      </a>
+                    )}
+                  </div>
+
+                  {project?.appStoreLink === "" &&
+                    project?.playStoreLink === "" && (
+                      <a
+                        href={project?.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="cursor-pointer"
+                      >
+                        <span className="text-black text-base xs:text-base md:text-xl lg:text-xl dark:text-white flex gap-x-2 items-center">
+                          <FaDownload />
+                          <p>Download</p>
+                        </span>
+                      </a>
+                    )}
+                </>
               )}
-            </a>
-          ) : (
-            ""
-          )}
+            </>
+          ) : null}
 
           {project?.repo !== "" ? (
             <a
@@ -61,7 +107,7 @@ function Project({ project, index }) {
               target="_blank"
               rel="noreferrer"
               className={project?.repo === "" ? "cursor-not-allowed" : ""}
-              onClick={(event) => event.preventdefault()}
+              onClick={(event) => event.preventDefault()}
             >
               <span
                 className={
@@ -77,7 +123,7 @@ function Project({ project, index }) {
           ) : (
             <button
               className={"cursor-not-allowed"}
-              onClick={(event) => event.preventdefault()}
+              onClick={(event) => event.preventDefault()}
             >
               <span
                 className={

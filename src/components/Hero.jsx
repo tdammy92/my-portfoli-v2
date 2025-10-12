@@ -1,9 +1,10 @@
 import React from "react";
-import { 
-  // FaCloudDownloadAlt, 
-  FaWhatsapp } from "react-icons/fa";
+import {
+  // FaCloudDownloadAlt,
+  FaWhatsapp,
+} from "react-icons/fa";
 // import DammyImage from "../assets/images/Dammy_official.jpeg";
-import { TeckStack } from "../common/data";
+import { StackType, TeckStack } from "../common/data";
 import StackIcon from "../common/StackIcon";
 import Tooltip from "./ToolTip";
 
@@ -29,11 +30,12 @@ function Hero() {
               Hello I'm
             </p>
             <h2 className="text-2xl xs:text-3xl md:text-4xl lg:text-6xl  font-black dark:text-white">
-              Taiwo Damilola
+              Damilola Taiwo
             </h2>
             <p className="text-base xs:text-l md:text-xl lg:text-2xl   text-gray-600 my-5 dark:text-gray-200">
-              A Senior Mobile Engineer, Network Engineer || System Administrator
-              conversant with the evolvment of technology
+              Senior Mobile & Front-End Engineer. I build seamless,
+              high-performance mobile and web applications that delight users
+              and solve real problems.
             </p>
           </div>
           <div className="mt-6 flex flex-row items-center justify-center font-Poppins">
@@ -49,7 +51,7 @@ function Hero() {
               target="__blank"
               className="mx-4 border-2 text-base xs:text-lg md:text-xl lg:text-2xl gap-x-2 border-black dark:border-white p-1 px-6 xs:px-6 md:px-6 rounded-3xl flex flex-row items-center bg-black text-white  hover:bg-white hover:text-black transition ease-in-out duration-300"
             >
-              <span> Chat me</span>
+              <span>Let’s talk</span>
               <FaWhatsapp />
             </a>
 
@@ -62,25 +64,98 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="font-Poppins mt-20   flex flex-col md:flex-row items-center justify-center justify-items-center">
-        <h3 className=" text-xl  md:font-bold  text-center md:text-2xl  md:border-r-2 md:mr-4 border-black dark:border-white  w-48 dark:text-white">
-          Tech Stack
+
+      <div className="font-Poppins mt-20   flex flex-col items-center justify-center justify-items-center">
+        <h3 className=" text-xl  md:font-bold  text-center md:text-2xl  md:mr-4  w-48 dark:text-white">
+          Technologies
+        </h3>
+      </div>
+      <div className="font-Poppins  flex flex-col md:flex-row items-center justify-center justify-items-center">
+        <h3 className="capitalize text-xl  md:font-bold  text-center md:text-2xl  md:border-r-2 md:mr-4 border-black dark:border-white  w-48 dark:text-white">
+          {StackType.FRONTEND}
         </h3>
         <div className="w-full  my-4 flex flex-wrap gap-4 px-10 md:px-0">
-          {TeckStack?.map((stack, index) => {
-            return (
-              <div
-                className="hover:scale-125 duration-300 "
-                key={index}
-                title={stack?.name}
-              >
-
-                <Tooltip text={stack?.name}>
-                <StackIcon className="" stack={stack.name} />
-                </Tooltip>
-              </div>
-            );
-          })}
+          {TeckStack?.filter((tech) => tech?.type === StackType?.FRONTEND)?.map(
+            (stack, index) => {
+              return (
+                <div
+                  className="hover:scale-125 duration-300 "
+                  key={index}
+                  title={stack?.name}
+                >
+                  <Tooltip text={stack?.name}>
+                    <StackIcon className="" stack={stack.name} />
+                  </Tooltip>
+                </div>
+              );
+            }
+          )}
+        </div>
+      </div>
+      <div className="font-Poppins  flex flex-col md:flex-row items-center justify-center justify-items-center">
+        <h3 className="capitalize text-xl  md:font-bold  text-center md:text-2xl  md:border-r-2 md:mr-4 border-black dark:border-white  w-48 dark:text-white">
+          {StackType.BACKEND}
+        </h3>
+        <div className="w-full  my-4 flex flex-wrap gap-4 px-10 md:px-0">
+          {TeckStack?.filter((tech) => tech?.type === StackType?.BACKEND)?.map(
+            (stack, index) => {
+              return (
+                <div
+                  className="hover:scale-125 duration-300 "
+                  key={index}
+                  title={stack?.name}
+                >
+                  <Tooltip text={stack?.name}>
+                    <StackIcon className="" stack={stack.name} />
+                  </Tooltip>
+                </div>
+              );
+            }
+          )}
+        </div>
+      </div>
+      <div className="font-Poppins  flex flex-col md:flex-row items-center justify-center justify-items-center">
+        <h3 className="capitalize text-xl  md:font-bold  text-center md:text-2xl  md:border-r-2 md:mr-4 border-black dark:border-white  w-48 dark:text-white">
+          {StackType.TOOL}
+        </h3>
+        <div className="w-full  my-4 flex flex-wrap gap-4 px-10 md:px-0">
+          {TeckStack?.filter((tech) => tech?.type === StackType?.TOOL)?.map(
+            (stack, index) => {
+              return (
+                <div
+                  className="hover:scale-125 duration-300 "
+                  key={index}
+                  title={stack?.name}
+                >
+                  <Tooltip text={stack?.name}>
+                    <StackIcon className="" stack={stack.name} />
+                  </Tooltip>
+                </div>
+              );
+            }
+          )}
+        </div>
+      </div>
+      <div className="font-Poppins  flex flex-col md:flex-row items-center justify-center justify-items-center">
+        <h3 className="capitalize text-xl  md:font-bold  text-center md:text-2xl  md:border-r-2 md:mr-4 border-black dark:border-white  w-48 dark:text-white">
+          {StackType.DATABASE}
+        </h3>
+        <div className="w-full  my-4 flex flex-wrap gap-4 px-10 md:px-0">
+          {TeckStack?.filter((tech) => tech?.type === StackType?.DATABASE)?.map(
+            (stack, index) => {
+              return (
+                <div
+                  className="hover:scale-125 duration-300 "
+                  key={index}
+                  title={stack?.name}
+                >
+                  <Tooltip text={stack?.name}>
+                    <StackIcon className="" stack={stack.name} />
+                  </Tooltip>
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
     </section>
